@@ -1,5 +1,11 @@
 # Dropdown browser regression
 
+`plugin-discover-logo-size.test.cjs` checks that Discover's recommendation,
+ranking and cards give logos room while keeping an edge-to-edge picture inside
+the rounded tile. It also covers a wide picture, a line logo and a missing
+picture at desktop and narrow widths, in every language and in Chromium and
+WebKit. The API is faked; `MAGPIE_ASSETS` can select an older assets directory.
+
 `agent-details-ready.test.cjs` holds the first settings read and the lazy
 Long conversations module on the main window's Agents → Details path. It
 checks a complete first and warm opening without a final height jump in all
